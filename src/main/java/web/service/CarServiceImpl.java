@@ -8,7 +8,6 @@ import java.util.List;
 @Service
 public class CarServiceImpl implements CarService{
 
-
     private List<Car> cars;
     {
         cars = new ArrayList<>();

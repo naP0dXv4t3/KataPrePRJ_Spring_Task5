@@ -18,7 +18,7 @@ import java.util.List;
 @Controller
 public class CarController  {
     @Autowired
-    private CarServiceImpl carService;
+    private CarService carService;
     @GetMapping("/cars")
     public String cars (@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
         model.addAttribute("cars", carService.carsCount(count));
